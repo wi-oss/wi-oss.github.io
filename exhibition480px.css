@@ -1,0 +1,108 @@
+.header {
+    display: none;
+}
+.menu-btn {
+	width: 64px;
+	height: 64px;
+	background: #ffffff;
+	position: fixed;
+	top: 15px;
+	right: 152px;
+	z-index: 999;
+	padding-top: 7px;
+	box-sizing: border-box;
+	cursor:pointer;
+}
+.menu-btn span {
+	width: 60%;
+	height: 3px;
+	background: #000000;
+	display: block;
+	margin: 10px auto;
+    transition: all .3s;
+}
+
+.menu-box {
+	width: 100%;
+	height: 100vh;
+	background: #000;
+	position: fixed;
+	top: 0;
+	right: -100%;
+	padding: 120px 30px;
+	box-sizing: border-box;
+	transition: all .3s;
+    text-align: center;
+    z-index: 100;
+}
+.menu-box a {
+	color: #fff;
+	font-size: 25px;
+	font-family: sans-serif;
+	line-height: 3.5;
+}
+
+.menu-box.active {
+	right: 0!important;
+}
+.menu-btn.active {
+    background: red;
+}
+.menu-btn.active span:first-child{
+    transform: rotate(45deg) translate(10px,9px);
+}
+.menu-btn.active span:last-child {
+    transform: rotate(-45deg) translate(10px,-6px);
+}
+.menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+.critial img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    margin: auto;
+}
+
+.top {
+    display: none;
+}
+.content {
+    width: 100%;
+}
+.content p {
+    font-size: 11px;
+    line-height: 1.5;
+    margin: 25px 35px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.ppp {
+    font-size: 15px;
+    margin: 10px 35px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.imformation p {
+    font-size: 13px;
+    margin: 25px 35px;
+}
+.col-12 {
+  margin: 0px;
+}
+.col-12 img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+.alert p {
+    font-size: 14px;
+}
+
+.soyn {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
